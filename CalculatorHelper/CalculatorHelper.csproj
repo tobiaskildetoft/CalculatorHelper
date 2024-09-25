@@ -1,26 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	  <TargetFramework>net8.0</TargetFramework>
-	  <ImplicitUsings>enable</ImplicitUsings>
-	  <Nullable>enable</Nullable>
-	  <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-	  <PackageId>Kildetoft.CalculatorHelper</PackageId>
-	  <Title>Kildetoft.CalculatorHelper</Title>
-	  <Version>$(VersionPrefix)</Version>
-	  <Authors>Tobias Kildetoft</Authors>
-	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <Description>Helper for parsing strings for calculators</Description>
-	  <Copyright>Copyright (c) Tobias Kildetoft 2024.</Copyright>
-	  <PackageProjectUrl>https://github.com/tobiaskildetoft/Kildetoft.SimpleSQLite</PackageProjectUrl>
-	  <PackageTags>sqlite;data;database;spec;specification</PackageTags>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageId>Kildetoft.CalculatorHelper</PackageId>
+		<Title>Kildetoft.CalculatorHelper</Title>
+		<Version>$(VersionPrefix)</Version>
+		<Authors>Tobias Kildetoft</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Description>Helper for parsing strings for calculators</Description>
+		<Copyright>Copyright (c) Tobias Kildetoft 2024.</Copyright>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/tobiaskildetoft/CalculatorHelper</PackageProjectUrl>
+		<PackageTags>calculator</PackageTags>
 
-	  <PackageVersion>2.1.0</PackageVersion>
-	  <PackageReleaseNotes>
-		  * Fixes a bug that prevented creation of new tables
-		  * Add option to close database connections created via DI
-		  * Add new extensions for IEnumerable for unit testing specifications
-	  </PackageReleaseNotes>
-  </PropertyGroup>
+		<PackageVersion>1.0.0</PackageVersion>
+		<PackageReleaseNotes>Initial stable release
+		</PackageReleaseNotes>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
